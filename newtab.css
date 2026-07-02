@@ -45,7 +45,9 @@ body {
   padding: 8vh 1.5rem;
   border: none;
   outline: none;
-  resize: none;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
   background: transparent;
   color: var(--fg);
   caret-color: var(--caret);
@@ -57,11 +59,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern", "liga", "onum";
-}
-
-#note::placeholder {
-  color: var(--fg);
-  opacity: 0.35;
 }
 
 /* Slim, unobtrusive scrollbar */
