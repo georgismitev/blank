@@ -1,0 +1,78 @@
+/* Literata — variable, SIL Open Font License 1.1.
+   A warm, sturdy book serif tuned for on-screen reading. */
+@font-face {
+  font-family: "Literata";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("fonts/Literata.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Literata";
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("fonts/Literata-Italic.woff2") format("woff2");
+}
+
+:root {
+  /* Claude's --bg-100 and --text-000 */
+  --bg: #f8f8f6;
+  --fg: #121212;
+  --caret: #121212;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+}
+
+#note {
+  width: 100%;
+  max-width: 42rem;
+  height: 100%;
+  padding: 8vh 1.5rem;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  color: var(--fg);
+  caret-color: var(--caret);
+  font-family: "Literata", Georgia, "Arial Hebrew", "Noto Sans Hebrew", "Times New Roman", Times, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "PingFang TC", "Microsoft JhengHei", "Noto Sans CJK TC", "Hiragino Sans", "Yu Gothic", Meiryo, "Noto Sans CJK JP", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK KR", serif;
+  font-size: 1.4rem;
+  line-height: 1.75;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern", "liga", "onum";
+}
+
+#note::placeholder {
+  color: var(--fg);
+  opacity: 0.35;
+}
+
+/* Slim, unobtrusive scrollbar */
+#note::-webkit-scrollbar {
+  width: 8px;
+}
+#note::-webkit-scrollbar-thumb {
+  background: var(--fg);
+  opacity: 0.15;
+  border-radius: 4px;
+}
+#note::-webkit-scrollbar-track {
+  background: transparent;
+}
