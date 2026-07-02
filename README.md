@@ -2,7 +2,7 @@
 
 A blank new tab for Chrome. Just a blinking cursor — start writing. No ads, no buttons, no settings.
 
-Notes autosave locally and persist across tabs and restarts.
+Every new tab starts blank. You drive the journey.
 
 ![Blank new tab](./blank-screenshot.png)
 
@@ -23,9 +23,9 @@ No setup needed.
 
 ## How it works
 
-- Notes are stored in `localStorage`, scoped to the extension — nothing leaves your machine.
+- Nothing is stored — each new tab starts fresh, so notes never leave the page.
 - No permissions are requested in the manifest.
-- Open tabs stay in sync via the browser `storage` event.
+- Bold survives (Cmd/Ctrl+B and on paste); all other pasted styling is stripped.
 
 ## Files
 
