@@ -1,7 +1,8 @@
 const note = document.getElementById("note");
 
-// Every new tab starts clean: just the prompt at the top, nothing restored.
-note.textContent = "You drive.";
+// Every new tab starts clean: just the prompt, nothing restored. "You" is bold,
+// which also quietly shows off that bold text survives here.
+note.innerHTML = "<b>You</b> drive.";
 note.focus();
 
 // Put the blinking cursor at the very end so you type straight after it.

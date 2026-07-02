@@ -61,14 +61,21 @@ body {
   font-feature-settings: "kern", "liga", "onum";
 }
 
-/* Slim, unobtrusive scrollbar */
+/* Slim, unobtrusive scrollbar. `opacity` is ignored on the thumb pseudo-element,
+   so the tint has to live in the color itself — hence rgba, not var(--fg). */
+#note {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(18, 18, 18, 0.14) transparent;
+}
 #note::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 #note::-webkit-scrollbar-thumb {
-  background: var(--fg);
-  opacity: 0.15;
-  border-radius: 4px;
+  background: rgba(18, 18, 18, 0.14);
+  border-radius: 3px;
+}
+#note:hover::-webkit-scrollbar-thumb {
+  background: rgba(18, 18, 18, 0.28);
 }
 #note::-webkit-scrollbar-track {
   background: transparent;
