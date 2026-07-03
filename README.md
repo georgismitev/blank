@@ -6,7 +6,13 @@ Every new tab starts blank. You drive the journey.
 
 ![Blank new tab](./blank-screenshot.png)
 
-## Install (unpacked)
+## Install
+
+Get it from the official **[Chrome Web Store](https://chromewebstore.google.com/detail/blank/jlplehalogfbnkpcdoclogohoinhalja)** — one click, auto-updating.
+
+### Install (unpacked)
+
+Prefer to run it from source? Load the folder directly:
 
 1. Open `chrome://extensions`
 2. Toggle **Developer mode** (top-right)
